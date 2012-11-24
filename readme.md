@@ -4,12 +4,9 @@ Simple aesthetic: white, minimalistic in the style of Windows Recovery Essential
 Reusable container: modular container design for the secondary pages.
 Integrated homepage: learn about the product and choose product to purchase from the homepage.
 Conversion-focused: ultimate goal of redesign is to increase customer sign ups.
-Project quote: $1800, with three iterations: first iteration (balsamiq mockup), feedback, second iteration (html&css), feedback, third iteration (complete and ready). Estimated completion date: November 26th.
 
 SystemDiscs.com Site Outline
 ====================
-
-Please look over this site outline and let me know what you think. What I've done is taken the current content along with your email comments and reorganized/relabeled it to be clearer to your customer.
 
 ### Save money & fix your computer in minutes.
 No one should have to pay Best Buy's Geek Squad or your local PC repair shop hundreds of dollars to fix simple issues. We are pleased to offer you the same repair CDs they use at an unbeatable price.
