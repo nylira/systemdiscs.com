@@ -1,21 +1,23 @@
 body {
-  font: 1em/1.5 Georgia, serif;
+  font: 1em/1.5 sans-serif;
   color: #000;
+  background: #f6f6f6;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  margin: 0;
 }
 h2 {
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.25em;
   letter-spacing: -1px;
-  margin-bottom: .5em;
+  margin: 0 0 .5em;
 }
 h3 {
-  font-size: 1.25em;
-  line-height: 1em;
+  font-weight: bold;
   margin: 0 0 .5em;
+  font-size: 1em;
 }
 p {
   margin: 0 0 1.5em;
@@ -24,49 +26,43 @@ p {
 .clearfix:after {clear:both;}
 .clearfix {zoom:1;}
 
-.container {
+.container, .hr {
   width: 960px;
   margin: 0 auto;
 }
 
 #branding {
   width: 320px;
+  padding: 2em 1em;
+  height: 75px;
+  margin: 0 auto;
 }
 #branding img {
   float: left;
 }
 
-
 #container {
   background: #fff;
-  width: 960px;
+  width: 962px;
+  border: 1px solid #ddd;
+  box-shadow: hsla(0,0%,0%,.15) 0 2px 5px;
 }
-
 section {
-  border-top: 1px solid #ddd;
   padding: 3em 0;
+  border-top: 1px solid #ddd;
 }
 section header {
   text-align: center;
-  width: 800px;
+  width: 720px;
   margin: 0 auto 3em;
 }
 section header p {
-  color: #999;
+  color: #333;
 }
 
 section.top {
   border-top: none;
 }
-section.top header {
-  width: 480px;
-  padding-left: 80px;
-  float: left;
-  text-align: left;
-}
-section.top header h2 {
-  font-size: 2em;
-} 
 
 section.top ol {
   width: 480px;
@@ -76,15 +72,11 @@ section.top ol {
 }
 
 ul.steps {
-  width: 720px;
-  margin: 0 auto;
+  margin: 0 160px;
   list-style: none;
 }
 ul.steps li {
-  width: 720px;
-  border: 1px solid #ddd;
-  margin: 0 0 1em;
-  padding: 2em 0;
+  margin: 0 0 1.5em;
 }
 ul.steps li.text {
   border-color: transparent;
@@ -97,15 +89,15 @@ ul.steps li .text {
 ul.steps li .num {
   width: 80px;
   text-align: center;
-  font-size: 2em;
-  line-height: 1.25em;
-  display: none
+  font-size: 4em;
+  line-height: 1em;
+  color: #ddd;
 }
 ul.steps li .text {
-  padding: 0 2em;
+  width: 560px;
 }
 ul.steps li p {
-  color: #999;
+  color: #666;
 }
 
 table.classic {
@@ -113,20 +105,25 @@ table.classic {
   border-collapse: auto;
   border-collapse: collapse;
   width: 720px;
-  margin: 0 auto;
+  margin: 0 auto 1.5em;
+}
+table.classic th.feature {
+  text-align: left;
 }
 table.classic th, 
 table.classic td {
   padding: 1em;
-  border: 4px solid #fff;
+  border-top: 3px solid #eee;
   width: 33%;
 }
 table.classic td.yes {
-  background: hsl(120,100%,35%);
+  color: hsl(120,100%,35%);
+  text-align: center;
 }
 
 table.classic td.no {
-  background: hsl(0,100%,35%);
+  color: hsl(0,100%,35%);
+  text-align: center;
 }
 table.three-cols {
   width: 840px;
@@ -154,6 +151,102 @@ table.three-cols td ul {
   margin: 0;
   color: #666;
   padding: 1em 1.5em 1.5em;
+}
+
+ul.products {
+  margin: 0 64px 0 80px;
+}
+ul.products li.family {
+  float: left;
+  width: 256px;
+  margin-right: 16px;
+}
+
+ul.products li.family h3 {
+  text-align: center;
+  margin: 0 0 1em;
+  background: #333;
+  color: #fff;
+  font: 1em/3 sans-serif;
+}
+ul.products li.family li.product {
+  border: 3px solid #ddd;
+  margin: 0 0 1em;
+}
+ul.products li.family li.product .title,
+ul.products li.family li.product .data {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+/*
+ul.products li.family li.product .data,
+ul.products li.family li.product .footer {
+  display: none;
+}
+ul.products li.family li.product:hover .data,
+ul.products li.family li.product:hover .footer {
+  display: block;
+}
+*/
+ul.products li.family li.product .title {
+  text-align: center;
+}
+ul.products li.family li.product .title h4 {
+  font-weight: bold;
+}
+ul.products li.family li.product .title h5 {
+  color: #999;
+}
+ul.products li.family li.product .data {
+  padding: 1.25em 1.5em;
+}
+ul.products li.family li.product .data p {
+  color: #666;
+  margin: 0;
+}
+ul.products li.family li.product .footer {
+  padding: 1em;
+  height: 27px;
+}
+ul.products li.family li.product .footer .price {
+  line-height: 27px;
+  display: block;
+  padding-right: 1em;
+  float: left;
+}
+ul.products li.family li.product .footer form {
+  display: block;
+  float: right;
+}
+
+ul.products li.home.family h3 {background: hsl(95,59%,45%);}
+ul.products li.home.family li.product {border-color: hsl(95,59%,45%);}
+ul.products li.home.family li.product .title,
+ul.products li.home.family li.product .data {
+  border-color: hsl(95,59%,80%);
+  color: hsl(112,73%,29%);
+}
+ul.products li.home.family li.product:hover {border-color: hsl(112,73%,29%);}
+
+ul.products li.pro.family h3 {background: hsl(194,100%,43%);}
+ul.products li.pro.family li.product {border-color: hsl(194,100%,43%);}
+ul.products li.pro.family li.product .title,
+ul.products li.pro.family li.product .data {
+  border-color: hsl(194,100%,80%);
+  color: hsl(202,99%,33%);
+}
+ul.products li.pro.family li.product:hover {border-color: hsl(202,99%,33%);}
+
+ul.products li.server.family li.product {border-color: hsl(51,8%,33%);}
+ul.products li.server.family li.product .title,
+ul.products li.server.family li.product .data {
+  border-color: hsl(51,8%,80%);
+  color: hsl(41,75%,5%);
+}
+ul.products li.server.family li.product:hover {border-color: hsl(41,75%,5%);}
+
+ul.products li.family li.product .data {
+  font-size: 12px;
 }
 footer.site {
   font-size: 75%;
