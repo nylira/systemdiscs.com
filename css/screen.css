@@ -1,18 +1,21 @@
 body {
   font: 1em/1.5 sans-serif;
   color: #000;
-  background: #f6f6f6;
+  background: #fff;
+  padding: 0;
+  margin: 0;
 }
-
+a {
+  color: hsl(0,100%,33%);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: hsl(0,100%,23%);
+}
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0;
-}
-h2 {
-  font-size: 2em;
-  line-height: 1.25em;
-  letter-spacing: -1px;
-  margin: 0 0 .5em;
 }
 h3 {
   font-weight: bold;
@@ -25,54 +28,64 @@ p {
 .clearfix:before,.clearfix:after {content:""; display:table;}
 .clearfix:after {clear:both;}
 .clearfix {zoom:1;}
-
 .container, .hr {
   width: 960px;
   margin: 0 auto;
 }
-
+#site-header {}
 #branding {
-  width: 320px;
-  padding: 2em 1em;
-  height: 75px;
+  padding: 3em 0 0;
+  text-align: center;
+}
+#branding h1 {
   margin: 0 auto;
 }
-#branding img {
-  float: left;
-}
-
 #container {
-  background: #fff;
-  width: 962px;
-  border: 1px solid #ddd;
-  box-shadow: hsla(0,0%,0%,.15) 0 2px 5px;
+  margin: 0 0 1.5em;
 }
 section {
   padding: 3em 0;
-  border-top: 1px solid #ddd;
+  border-bottom: 3px solid #eee;
 }
 section header {
-  text-align: center;
-  width: 720px;
+  max-width: 800px;
   margin: 0 auto 3em;
+  text-align: center;
+}
+section header h2 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  line-height: 1.25em;
+  margin: 0 0 16px;
 }
 section header p {
-  color: #333;
+  width: 580px;
+  margin: 0 auto;
 }
-
-section.top {
-  border-top: none;
+section.top h3 {
+  text-align: center;
+  font-size: 1em;
+  line-height: 3em;
+  margin: 0;
+  font-weight: normal;
 }
-
-section.top ol {
-  width: 480px;
-  float: left;
-  margin: 2em 0 0;
-  list-style: none;
+ul.problems {
+  width: 256px;
+  margin: 0 auto;
 }
-
+ul.problems li {
+  width: 256px;
+  border-top: 3px solid #eee;
+}
+ul.problems li a {
+  display: block;
+  text-align: center;
+  line-height: 3em;
+  background: #fff;
+  font-weight: bold;
+}
 ul.steps {
-  margin: 0 160px;
+  margin: 0 80px;
   list-style: none;
 }
 ul.steps li {
@@ -82,29 +95,13 @@ ul.steps li.text {
   border-color: transparent;
   padding: 0;
 }
-ul.steps li .num,
-ul.steps li .text {
-  float: left;
-}
-ul.steps li .num {
-  width: 80px;
-  text-align: center;
-  font-size: 4em;
-  line-height: 1em;
-  color: #ddd;
-}
-ul.steps li .text {
-  width: 560px;
-}
 ul.steps li p {
   color: #666;
 }
 
 table.classic {
-  border-spacing: 4px;
-  border-collapse: auto;
   border-collapse: collapse;
-  width: 720px;
+  width: 800px;
   margin: 0 auto 1.5em;
 }
 table.classic th.feature {
@@ -125,34 +122,6 @@ table.classic td.no {
   color: hsl(0,100%,35%);
   text-align: center;
 }
-table.three-cols {
-  width: 840px;
-  margin: 0 auto;
-  border-spacing: 20px;
-}
-table.three-cols td {
-  width: 267px;
-  border: 1px solid #ddd;
-  vertical-align: top;
-  text-align: center;
-}
-
-table.three-cols td h3 {
-  display: inline-block;
-  line-height: 3em;
-  border-bottom: 1px solid #eee;
-  width: 100%;
-  margin: 0;
-}
-table.three-cols td p,
-table.three-cols td ul {
-  display: inline-block;
-  font-size: 14px;
-  margin: 0;
-  color: #666;
-  padding: 1em 1.5em 1.5em;
-}
-
 ul.products {
   margin: 0 64px 0 80px;
 }
@@ -199,6 +168,7 @@ ul.products li.family li.product .title h5 {
 }
 ul.products li.family li.product .data {
   padding: 1.25em 1.5em;
+  min-height: 211px;
 }
 ul.products li.family li.product .data p {
   color: #666;
@@ -248,16 +218,32 @@ ul.products li.server.family li.product:hover {border-color: hsl(41,75%,5%);}
 ul.products li.family li.product .data {
   font-size: 12px;
 }
+ul.verified {
+  height: 75px;
+  width: 640px;
+  text-align: center;
+  margin: 0 auto 1.5em;
+}
+ul.verified li {
+  display: inline-block;
+  vertical-align: middle;
+  height: 75px;
+  margin: 0 2em;
+}
+ul.verified li.payments,
+ul.verified li.comodo {
+  padding: 8px 0;
+}
 footer.site {
   font-size: 75%;
   color: #666;
-  width: 800px;
   padding: 1.5em 0;
   text-align: center;
 }
 footer.site p,
 footer.site ul {
-  margin: 0 0 1.5em;
+  margin: 0 auto 1.5em;
+  width: 800px;
 }
 footer.site ul li {
   display: inline-block;
