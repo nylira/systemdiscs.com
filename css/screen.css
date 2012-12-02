@@ -1,18 +1,17 @@
 body {
-  font: 1em/1.5 sans-serif;
-  color: #000;
-  background: #fff;
+  font: 1em/1.5 Calibri, Trebuchet MS, sans-serif;
+  color: #333;
   padding: 0;
   margin: 0;
+  background: #eee;
+  padding: 1.5em 0 0;
 }
 a {
-  color: hsl(0,100%,33%);
   text-decoration: none;
-  font-weight: bold;
+  color: hsl(192,100%,50%);
 }
-a:hover {
-  color: hsl(0,100%,23%);
-}
+a:hover {color: #24459A}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0;
@@ -22,9 +21,7 @@ h3 {
   margin: 0 0 .5em;
   font-size: 1em;
 }
-p {
-  margin: 0 0 1.5em;
-}
+p {margin: 0 0 1.5em}
 .clearfix:before,.clearfix:after {content:""; display:table;}
 .clearfix:after {clear:both;}
 .clearfix {zoom:1;}
@@ -32,73 +29,133 @@ p {
   width: 960px;
   margin: 0 auto;
 }
-#site-header {}
 #branding {
-  padding: 3em 0 0;
   text-align: center;
+  height: 42px;
 }
+#branding img, h1 {
+  float: left;
+}
+#branding img { margin: 9px 4px;}
 #branding h1 {
-  margin: 0 auto;
+  margin-left: 5px;
+  color: #333;
+  line-height: 42px;
+  font-size: 20px;
 }
 #container {
   margin: 0 0 1.5em;
+  width: 960px;
+  margin: 0 auto;
 }
 section {
   padding: 3em 0;
-  border-bottom: 3px solid #eee;
+  border-top: 3px solid #eee;
+  width: 960px;
+  margin: 0 auto;
+  background: #fff;
 }
 section header {
   max-width: 800px;
   margin: 0 auto 3em;
   text-align: center;
 }
-section header h2 {
+section h2 {
   font-size: 2em;
   letter-spacing: -1px;
   line-height: 1.25em;
   margin: 0 0 16px;
+  color: #111;
 }
 section header p {
   width: 580px;
   margin: 0 auto;
 }
-section.top h3 {
-  text-align: center;
-  font-size: 1em;
-  line-height: 3em;
-  margin: 0;
+
+/* section.top */
+section.top {
+  background: #0cf;
+  border-top: none;
+  padding: 80px 0;
+  background: #333;
+}
+section.top .left,
+section.top .right {
+  float: left;
+  text-align: left;
+}
+section.top .left {
+  width: 440px;
+  margin-left: 80px
+}
+section.top .left h2 {
+  font-size: 2.40em;
+  line-height: 1.25em;
   font-weight: normal;
+  margin: 0 0 24px;
+  padding-right: 40px;
+  color: #eee;
+}
+
+section.top .left p {
+  margin-right: 40px;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+ul.buttons {
+  height: 40px;
+}
+
+ul.buttons li {
+  margin-right: 1.25em;
+  float: left;
+}
+a.button {
+  display: block;
+  width: 160px;
+  text-align: center;
+  line-height: 40px;
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+}
+a.button:hover {
+  background: #0cf;
+  color: #000;
+}
+section.top .right {
+  width: 360px;
+  padding-top: 1em
+  margin-right: 80px
 }
 ul.problems {
-  width: 256px;
-  margin: 0 auto;
+  background: #333;
+  padding: 4px 0 0 4px;
+  background: #333;
 }
 ul.problems li {
-  width: 256px;
-  border-top: 3px solid #eee;
+  width: 174px;
+  margin: 0 4px 4px 0;
+  float: left;
+  background: #eee;
 }
 ul.problems li a {
   display: block;
-  text-align: center;
-  line-height: 3em;
-  background: #fff;
-  font-weight: bold;
-}
-ul.steps {
-  margin: 0 80px;
-  list-style: none;
-}
-ul.steps li {
-  margin: 0 0 1.5em;
-}
-ul.steps li.text {
-  border-color: transparent;
-  padding: 0;
-}
-ul.steps li p {
-  color: #666;
+  line-height: 1em;
+  padding: 13px;
+  color: #ddd;
+  background: #444;
+  border: 3px solid #444;
 }
 
+ul.problems li a:hover {
+  border-color: #0cf;
+}
+ul.problems li a img {
+  display: block;
+  margin-top: 1em;
+  border: none;
+}
 table.classic {
   border-collapse: collapse;
   width: 800px;
@@ -106,12 +163,13 @@ table.classic {
 }
 table.classic th.feature {
   text-align: left;
+  width: 40%;
 }
 table.classic th, 
 table.classic td {
-  padding: 1em;
+  padding: .75em 1em;
   border-top: 3px solid #eee;
-  width: 33%;
+  width: 20%;
 }
 table.classic td.yes {
   color: hsl(120,100%,35%);
@@ -147,16 +205,6 @@ ul.products li.family li.product .data {
   padding: 1em;
   border-bottom: 1px solid #ddd;
 }
-/*
-ul.products li.family li.product .data,
-ul.products li.family li.product .footer {
-  display: none;
-}
-ul.products li.family li.product:hover .data,
-ul.products li.family li.product:hover .footer {
-  display: block;
-}
-*/
 ul.products li.family li.product .title {
   text-align: center;
 }
@@ -168,7 +216,7 @@ ul.products li.family li.product .title h5 {
 }
 ul.products li.family li.product .data {
   padding: 1.25em 1.5em;
-  min-height: 211px;
+  height: 180px;
 }
 ul.products li.family li.product .data p {
   color: #666;
@@ -189,75 +237,100 @@ ul.products li.family li.product .footer form {
   float: right;
 }
 
-ul.products li.home.family h3 {background: hsl(95,59%,45%);}
-ul.products li.home.family li.product {border-color: hsl(95,59%,45%);}
+ul.products li.home.family h3 {
+  background: #71C238;
+  background: hsl(95,59%,45%);
+}
+ul.products li.home.family li.product {
+  border-color: #71C238;
+  border-color: hsl(95,59%,45%);
+}
 ul.products li.home.family li.product .title,
 ul.products li.home.family li.product .data {
+  border-color: #C7EAAE
   border-color: hsl(95,59%,80%);
+  color: #228014;
   color: hsl(112,73%,29%);
 }
-ul.products li.home.family li.product:hover {border-color: hsl(112,73%,29%);}
-
-ul.products li.pro.family h3 {background: hsl(194,100%,43%);}
-ul.products li.pro.family li.product {border-color: hsl(194,100%,43%);}
+ul.products li.home.family li.product:hover {
+  border-color: #228014;
+  border-color: hsl(112,73%,29%);
+}
+ul.products li.pro.family h3 {
+  background: #00A8DB;
+  background: hsl(194,100%,43%);
+}
+ul.products li.pro.family li.product {
+  border-color: #00A8DB;
+  border-color: hsl(194,100%,43%);
+}
 ul.products li.pro.family li.product .title,
 ul.products li.pro.family li.product .data {
+  border-color: #99E7FF;
   border-color: hsl(194,100%,80%);
+  color: #016AA7;
   color: hsl(202,99%,33%);
 }
-ul.products li.pro.family li.product:hover {border-color: hsl(202,99%,33%);}
-
-ul.products li.server.family li.product {border-color: hsl(51,8%,33%);}
+ul.products li.pro.family li.product:hover {
+  border-color: #016AA7;
+  border-color: hsl(202,99%,33%);
+}
+ul.products li.server.family li.product {
+  border-color: #5B594D;
+  border-color: hsl(51,8%,33%);
+}
 ul.products li.server.family li.product .title,
 ul.products li.server.family li.product .data {
+  border-color: #D0CFC8;
   border-color: hsl(51,8%,80%);
+  color: #161003;
   color: hsl(41,75%,5%);
 }
-ul.products li.server.family li.product:hover {border-color: hsl(41,75%,5%);}
+ul.products li.server.family li.product:hover {
+  border-color: #161003;
+  border-color: hsl(41,75%,5%);
+}
 
 ul.products li.family li.product .data {
   font-size: 12px;
 }
 ul.verified {
   height: 75px;
-  width: 640px;
+  width: 457px;
   text-align: center;
   margin: 0 auto 1.5em;
 }
 ul.verified li {
-  display: inline-block;
-  vertical-align: middle;
+  float: left;
   height: 75px;
   margin: 0 2em;
 }
-ul.verified li.payments,
+ul.verified li.payments img {
+  margin: 8px 0
+}
+ul.verified li.paypal {
+}
 ul.verified li.comodo {
-  padding: 8px 0;
 }
 footer.site {
-  font-size: 75%;
-  color: #666;
-  padding: 1.5em 0;
-  text-align: center;
+  padding: 3em 0;
 }
-footer.site p,
+footer.site a {color: #333;}
+footer.site a:hover {color: #888;}
+footer.site p, footer.site ul {
+  font-size: 75%;
+  color: #888;
+}
 footer.site ul {
-  margin: 0 auto 1.5em;
-  width: 800px;
+  border: 1px solid #ddd;
+  height: 36px;
+  margin: 0 0 1.5em;
 }
 footer.site ul li {
-  display: inline-block;
-}
-
-footer.site ul li a{
-  line-height: 3em;
-  display: block;
-  color: #666;
-  font-weight: bold;
-  text-decoration: none;
+  float: left;
+  line-height: 34px;
   padding: 0 1em;
 }
-footer.site ul li a:hover {
-  text-decoration: underline;
-  color: #000;
+footer.site ul li.copy {
+  width: 288px;
 }
