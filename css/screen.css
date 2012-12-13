@@ -33,7 +33,7 @@ p {margin: 0 0 1.5em}
   text-align: center;
   height: 42px;
 }
-#branding img, h1 {
+#branding img, #branding h1 {
   float: left;
 }
 #branding img { margin: 9px 4px;}
@@ -42,6 +42,12 @@ p {margin: 0 0 1.5em}
   color: #333;
   line-height: 42px;
   font-size: 20px;
+}
+#branding h1 a {
+  color: #333;
+}
+#branding h1 a:hover {
+  color: #24459A
 }
 #container {
   margin: 0 0 1.5em;
@@ -102,6 +108,8 @@ section.top .left p {
   color: #bbb;
   margin-bottom: 40px;
 }
+
+/* button designs */
 ul.buttons {
   height: 40px;
 }
@@ -156,6 +164,7 @@ ul.problems li a img {
   margin-top: 1em;
   border: none;
 }
+
 table.classic {
   border-collapse: collapse;
   width: 800px;
@@ -308,10 +317,81 @@ ul.verified li {
 ul.verified li.payments img {
   margin: 8px 0
 }
-ul.verified li.paypal {
+
+/* article styles */
+article {
+  width: 800px;
+  margin: 0 auto;
 }
-ul.verified li.comodo {
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  padding: 0;
+  margin: 0;
 }
+
+article h1 {
+  font-size: 1.75em;
+  font-weight: bold;
+  display: block;
+  margin: 1em 0 .5em;
+}
+article h2 {
+  font-size: 1.75em;
+  display: block;
+  margin: 1em 0 .5em;
+}
+article h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block;
+  margin: 1em 0 .5em;
+}
+article h4 {
+  font-size: 1.5em;
+  display: block;
+  margin: 1em 0 .5em;
+}
+article h5 {
+  font-size: 1.25em;
+  font-weight: bold;
+  display: block;
+  margin: 1em 0 .5em;
+}
+article h6 {
+  font-size: 1.25em;
+  display: block;
+  margin: 1em 0 .5em;
+}
+article p, article ul, article ol, article img {
+  margin: 0 0 1.5em;
+}
+article ul,
+article ol {
+  padding-left: 2em;
+  list-style: decimal;
+}
+article ul {
+  padding-left: 2em;
+  list-style: disc;
+}
+article li {
+  margin: 0 0 .5em;
+}
+article blockquote {
+  margin: 2em;
+  border: 1px solid #eee;
+  padding: 2em 2em .5em;
+  color: #666;
+
+}
+article img {
+  background: #666;
+}
+  
 footer.site {
   padding: 3em 0;
 }
