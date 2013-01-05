@@ -206,104 +206,71 @@ ul.products li.family h3 {
   color: #fff;
   font: 1em/3 sans-serif;
 }
-ul.products li.family li.product {
+ul.products li.family form {
   border: 3px solid #ddd;
   margin: 0 0 1em;
-}
-ul.products li.family li.product .title,
-ul.products li.family li.product .data {
-  padding: 1em;
-  border-bottom: 1px solid #ddd;
-}
-ul.products li.family li.product .title {
   text-align: center;
 }
-ul.products li.family li.product .title h4 {
-  font-weight: bold;
+
+ul.products li.family form ul.radios {
+  border-bottom: 1px solid #ddd;
 }
-ul.products li.family li.product .title h5 {
-  color: #999;
+ul.products li.family form ul.radios li {
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  position: relative;
+  height: 3em;
+  padding: .5em .75em;
 }
-ul.products li.family li.product .data {
-  padding: 1.25em 1.5em;
-  height: 180px;
-}
-ul.products li.family li.product .data p {
-  color: #666;
-  margin: 0;
-}
-ul.products li.family li.product .footer {
+ul.products li.family form ul.radios li.submit {
+  border-bottom: none;
   padding: 1em;
-  height: 27px;
+  height: auto;
+  text-align: center;
 }
-ul.products li.family li.product .footer .price {
-  line-height: 27px;
-  display: block;
-  padding-right: 1em;
-  float: left;
+ul.products li.family form ul.radios li input {
+  position: relative;
+  z-index: 10;
 }
-ul.products li.family li.product .footer form {
+ul.products li.family form ul.radios li label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5em 1em .5em 2.5em;
   display: block;
-  float: right;
+  width: 194px;
+  cursor: pointer;
+}
+ul.products li.family form ul.radios li label:hover {
+  background: #f6f6f6;
+}
+ul.products li.family form ul.radios li label .price {
+  color: #888;
+  font-size: 12px;
+  line-height: 24px;
 }
 
-ul.products li.home.family h3 {
-  background: #71C238;
-  background: hsl(95,59%,45%);
-}
-ul.products li.home.family li.product {
+ul.products li.home.family form {
   border-color: #71C238;
   border-color: hsl(95,59%,45%);
 }
-ul.products li.home.family li.product .title,
-ul.products li.home.family li.product .data {
-  border-color: #C7EAAE
-  border-color: hsl(95,59%,80%);
-  color: #228014;
-  color: hsl(112,73%,29%);
+ul.products li.pro.family form {
+  border-color: #00A8DB;
+  border-color: hsl(194,100%,43%);
 }
-ul.products li.home.family li.product:hover {
-  border-color: #228014;
-  border-color: hsl(112,73%,29%);
+ul.products li.server.family form {
+  border-color: #5B594D;
+  border-color: hsl(51,8%,33%);
+}
+ul.products li.home.family h3 {
+  background: #71C238;
+  background: hsl(95,59%,45%);
 }
 ul.products li.pro.family h3 {
   background: #00A8DB;
   background: hsl(194,100%,43%);
 }
-ul.products li.pro.family li.product {
-  border-color: #00A8DB;
-  border-color: hsl(194,100%,43%);
-}
-ul.products li.pro.family li.product .title,
-ul.products li.pro.family li.product .data {
-  border-color: #99E7FF;
-  border-color: hsl(194,100%,80%);
-  color: #016AA7;
-  color: hsl(202,99%,33%);
-}
-ul.products li.pro.family li.product:hover {
-  border-color: #016AA7;
-  border-color: hsl(202,99%,33%);
-}
-ul.products li.server.family li.product {
-  border-color: #5B594D;
-  border-color: hsl(51,8%,33%);
-}
-ul.products li.server.family li.product .title,
-ul.products li.server.family li.product .data {
-  border-color: #D0CFC8;
-  border-color: hsl(51,8%,80%);
-  color: #161003;
-  color: hsl(41,75%,5%);
-}
-ul.products li.server.family li.product:hover {
-  border-color: #161003;
-  border-color: hsl(41,75%,5%);
-}
 
-ul.products li.family li.product .data {
-  font-size: 12px;
-}
 ul.verified {
   height: 75px;
   width: 457px;

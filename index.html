@@ -8,7 +8,9 @@
     <link href="css/screen.css" rel="stylesheet">
     <link href="css/colorbox.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo.png">
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/IE9.js"></script>
+    <![endif]-->
 
   </head>
 
@@ -130,10 +132,7 @@
         <div class="container">
           <header>
             <h2>Choose your OS and start downloading.</h2>
-            <p>
-              Compatible 32- and 64-bit &middot;
-              Works with all languages and editions &middot;
-              Compatible with all service packs
+            <p>Works with all languages, editions (32/64 bit), and service packs.
             </p>
           </header>
           <div class="content">
@@ -141,38 +140,108 @@
               <li class="home family">
                 <h3>Home</h3>
                 <form>
-                  <select>
-                    <option>Choose your Home Edition&hellip;</option>
-                    <option id="home-8">Windows 8 Home - $14.75</option>
-                    <option id="home-7">Windows 7 Home - $14.75</option>
-                    <option id="home-vista">Windows Vista Home - $9.75</option>
-                    <option id="home-xp">Windows XP Home - $9.75</option>
-                  </select>
-                  <input type="image" src="img/orange.png">
+                  <ul class="radios">
+                    <li class="radio">
+                      <input type="radio" id="home8" name="home" value="home8">
+                      <label for="home8">
+                        <div class="title">Windows 8 Home</div>
+                        <div class="price">$14.75</div>
+                      </label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="home7" name="home" value="home7">
+                      <label for="home7">
+                        <div class="title">Windows 7 Home</div>
+                        <div class="price">$14.75</div>
+                      </label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="homevista" name="home" value="homevista">
+                      <label for="homevista">
+                        <div class="title">Windows Vista Home</div>
+                        <div class="price">$14.75</div>
+                      </label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="homexp" name="home" value="homexp">
+                      <label for="homexp">
+                        <div class="title">Windows XP Home</div>
+                        <div class="price">$14.75</div>
+                      </label>
+                    </li>
+                    <li class="submit">
+                      <input type="image" src="img/orange.png">
+                    </li>
+                  </ul>
                 </form>
               </li>
               <li class="pro family">
                 <h3>Professional</h3>
                 <form>
-                  <select>
-                    <option>Choose your Pro Edition&hellip;</option>
-                    <option id="pro-8">Windows 8 Pro - $29.75</option>
-                    <option id="pro-7">Windows 7 Pro - $29.75</option>
-                    <option id="pro-vista">Windows Vista Pro - $29.75</option>
-                    <option id="pro-xp">Windows XP Pro - $29.75</option>
-                  <input type="image" src="img/orange.png">
+                  <ul class="radios">
+                    <li class="radio">
+                      <input type="radio" id="pro8" name="pro" value="pro8">
+                      <label for="pro8">
+                        <div class="title">Windows 8 Pro</div>
+                        <div class="price">$29.75</div>
+                      </label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="pro7" name="pro" value="pro7">
+                      <label for="pro7">
+                        <div class="title">Windows 7 Pro</div>
+                        <div class="price">$29.75</div>
+                      </label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="provista" name="pro" value="provista">
+                      <label for="provista">
+                        <div class="title">Windows Vista Pro</div>
+                        <div class="price">$29.75</div>
+                      </label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="proxp" name="pro" value="proxp">
+                      <label for="proxp">
+                        <div class="title">Windows XP Pro</div>
+                        <div class="price">$29.75</div>
+                      </label>
+                    </li>
+                    <li class="submit">
+                      <input type="image" src="img/orange.png">
+                    </li>
+                  </ul>
                 </form>
               </li>
               <li class="server family">
                 <h3>Server</h3>
                 <form>
-                  <select>
-                    <option>Choose your Pro Edition&hellip;</option>
-                    <option id="server-2012">Windows Server 2012 - $74.75</option>
-                    <option id="server-2008">Windows Server 2008 - $74.75</option>
-                    <option id="server-2003">Windows Vista Server - $74.95</option>
-                  </select>
-                  <input type="image" src="img/orange.png">
+                  <ul class="radios">
+                    <li class="radio">
+                      <input type="radio" id="server2012" name="server" value="server8">
+                      <label for="server2012">
+                        <div class="title">Windows Server 2012</div>
+                        <div class="price">$74.95</div>
+                      </label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="server2008" name="server" value="server7">
+                      <label for="server2008">
+                        <div class="title">Windows Server 2008</div>
+                        <div class="price">$74.95</div>
+                      </label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" id="server2003" name="server" value="servervista">
+                      <label for="server2003">
+                        <div class="title">Windows Server 2003</div>
+                        <div class="price">$74.95</div>
+                      </label>
+                    </li>
+                    <li class="submit">
+                      <input type="image" src="img/orange.png">
+                    </li>
+                  </ul>
                 </form>
               </li>
             </ul>
